@@ -1,0 +1,79 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+html{
+      font-size: 16px;
+}
+body{
+      font-family: "Advent Pro", serif;
+      font-weight: 100;
+      font-style: normal;
+      padding-top: 5px;
+}
+nav{
+      text-align: center;
+      border-bottom: 1px solid gray;
+      padding: 0.5rem;
+      letter-spacing: 5px;
+      background-image: linear-gradient(to right, rgb(100, 98, 98), black);
+      color: white;
+}
+nav h1{
+      font-size: 2rem;
+      font-weight: 300;
+      
+}
+nav h2{
+      font-size: 1.5rem;
+      font-weight: 300;
+}
+/* ===============Main================ */
+#car_boxes{
+      padding: 10%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-gap: 1.5rem;
+      grid-template-rows: repeat(auto-fit, minmax(370px, 1fr));
+}
+.box{
+     border: 1px solid rgba(128, 128, 128, 0.817);
+     border-radius: 4px; 
+     padding: 1rem;
+}
+.box{
+    display: grid; 
+    grid-template-rows: 1.5fr 1fr; 
+}
+.nested_box1 img{
+     width: 100%;
+     height: auto;
+}
+.nested_box2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem;
+      text-transform: capitalize;
+      font-weight: 400;
+}
+.nested_box2 p{
+      text-align: center;
+      margin: 5px 0;
+}
+
+/* ========footer========== */
+footer{
+      background-image: linear-gradient(to right, black, rgb(100, 98, 98));
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+}
+footer a{
+      color: white;
+      text-decoration: none;
+}
